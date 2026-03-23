@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #4facfe;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #00c6ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration</h2>
+
+    <!-- IMPORTANT CHANGE HERE -->
+    <form action="success.html" method="get">
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Course</label>
+        <select>
+            <option>BCA</option>
+            <option>BSc</option>
+            <option>BCom</option>
+            <option>BE</option>
+        </select>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required>
+
+        <button type="submit">Register</button>
+
+    </form>
+</div>
+
+</body>
+</html>
